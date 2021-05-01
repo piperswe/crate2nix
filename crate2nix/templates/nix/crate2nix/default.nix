@@ -42,6 +42,7 @@ rec {
     pointer_width = toString stdenv.hostPlatform.parsed.cpu.bits;
     vendor = stdenv.hostPlatform.parsed.vendor.name;
     debug_assertions = false;
+    target = stdenv.hostPlatform.system;
   };
 
   /* Filters common temp files and build files. */
